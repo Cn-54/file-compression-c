@@ -120,7 +120,3 @@ cd run-length && make
 ```
 
 ---
-
-## License
-
-MIT
