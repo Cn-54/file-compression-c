@@ -3,10 +3,9 @@
 #include "HuffNode.h"
 #include "HuffTree.h"
 #include "binaryTree.h"
-#include "bitReader.h"
+#include "BitReader.h"
 #include <stdint.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 static Node *deserialiseTree(BitReader *br) {
     int bit = readBit(br);

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "encode.h"
+#include "decode.h"
 
 int main(int argc, char *argv[]) {
 
@@ -15,6 +16,9 @@ int main(int argc, char *argv[]) {
 
     if (strcmp(type, "encode") == 0) {
         encode(input, output);
+    }
+    else if (strcmp(type, "decode") == 0) {
+        decode(input, output);
     }
     else{
         printf("unknown mode: %s\n", type);
