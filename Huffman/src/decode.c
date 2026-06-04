@@ -31,7 +31,15 @@ static Node *deserialiseTree(BitReader *br) {
 
 void decode(const char *input, const char *output) {
     FILE *in = fopen(input, "rb");
+    if (!in) {
+        printf("failed to open input file: %s\n", input);
+        return;
+    }
     FILE *out = fopen(output, "wb");
+    if (!out) {
+        printf("failed to open output file: %s\n", input);
+        return;
+    }
 
     // read original file size from header
     uint32_t fileSize;
