@@ -46,7 +46,7 @@ Input:   AAAAABBBCC
 Output:  5A 3B 2C
 ```
 
-This implementation operates on raw bytes — it works on any file type, not just text.
+This implementation operates on raw bytes so it works on any file type, not just text.
 
 ### Binary Format
 
@@ -95,7 +95,7 @@ Produces: `./rle`
 
 - All files opened in binary mode (`rb` / `wb`) 
 - Output file gets `.rle` extension automatically
-- Not suited for already-compressed formats (PNG, ZIP, JPEG) — these types will not shrink and will expand in size
+- Not suited for already-compressed formats (PNG, ZIP, JPEG) as these types will not shrink and will expand in size
 ---
 
 ## Planned: Huffman Coding
