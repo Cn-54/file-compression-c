@@ -1,9 +1,11 @@
 // bitReader.c
-#include "bitReader.h"
+#include "BitReader.h"
+#include <stdint.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 struct BitReader {
-    FILE    *f;
+    FILE *f;
     uint8_t  buffer;
     int      bitCount;
 };
