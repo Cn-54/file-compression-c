@@ -8,7 +8,7 @@ A collection of file compression algorithms implemented in C. Each algorithm is 
 | Algorithm | Status | Best suited for |
 |---|---|---|
 | Run-Length Encoding (RLE) |  Complete | Files with long runs of repeated bytes |
-| Huffman Coding |  Decode in progress | General-purpose text and source files |
+| Huffman Coding |  complete | General-purpose text and source files |
 
 ---
 
@@ -181,16 +181,15 @@ Produces: `./huffman`
 
 ### Compression Results
 
-> Decode not yet complete so results will be verified once round-trip correctness is confirmed.
+Round-trip verified  `diff` of original and restored file produces no output.
 
 | File | Original | Compressed | Reduction |
 |---|---|---|---|
 | test.txt (English text) | 2,202 bytes | 1,293 bytes | 41% |
 
 ### Notes
-
 - Output file gets `.huff` extension automatically
-- Not suited for already-compressed formats (PNG, ZIP, JPEG)
+- Not suited for already compressed formats (PNG, ZIP, JPEG)
 - Compression effectiveness depends on byte frequency distribution so files with skewed distributions compress better
 
 ---
